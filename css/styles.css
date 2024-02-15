@@ -182,6 +182,13 @@ img {
     border-radius: 4px;
     min-width: 169px;
 }
+.subscribe-input,
+.form-label,
+.form-textarea,
+.checkbox-label {
+    font-size: 12px;
+    font-weight: 400;
+}
 
 /* header */
 .header {
@@ -262,8 +269,6 @@ img {
     background-position: center;
     background-size: cover;
     max-width: 1440px;
-
-  
 }
 .hero-container {
     /* max-width: 1440px; */
@@ -481,13 +486,6 @@ img {
     outline: transparent;
     line-height: 2;
 }
-.subscribe-input,
-.form-label,
-.form-textarea,
-.checkbox-label {
-    font-size: 12px;
-    font-weight: 400;
-}
 .subscribe-input::placeholder {
     color: currentColor;
 }
@@ -584,7 +582,8 @@ img {
 .modal-desc {
     margin-bottom: 16px;
 }
-.form {
+.form-wrapper {
+    margin-bottom: 8px;
 }
 .form-label {
     display: block;
@@ -596,19 +595,21 @@ img {
 }
 .form-field {
     position: relative;
-    margin-bottom: 8px;
 }
 .form-input {
     width: 100%;
     height: 40px;
+    background-color: transparent;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     padding-left: 38px;
-    outline: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* стиль контура для элемента */
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus {
-    border: 1px solid #4D5AE5;
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #4D5AE5;
 }
 .form-icon {
     position: absolute;
@@ -620,19 +621,30 @@ img {
 .form-input:focus + .form-icon {
     fill: #4D5AE5;
 }
+.form-field {
+    /* margin-bottom: 16px;    */
+}
 .form-textarea {
-   width: 100%;
-   resize: vertical;
-   min-height: 120px;
-   max-height: 180px;
-   padding: 8px 16px; 
-   border-radius: 4px;
-   border: 1px solid rgba(46, 47, 66, 0.40);
+    width: 100%;
+    resize: vertical;
+    height: 120px;
+    color: rgba(46, 47, 66, 0.40); 
+    background-color: transparent;
+    /* стиль контура */
+    outline: transparent;  
+    /* запрет изменения размера */
+    resize: none; 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px 16px; 
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    /* margin-bottom: 16px;   */
 }
-.form-textarea::placeholder {
+/* .form-textarea::placeholder {
    color: rgba(46, 47, 66, 0.40); 
-}
+} */
 .form-btn {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-top: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
