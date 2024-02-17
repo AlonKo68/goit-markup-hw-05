@@ -573,12 +573,13 @@ img {
     border: none;
 }
 .modal-btn-icon {
-    fill: currentColor;
+    /* fill: currentColor; */
+    fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .modal-btn-icon:hover,
 .modal-btn-icon:focus {
-    fill: #ffffff
+    fill: #ffffff;
 }
 .modal-desc {
     margin-bottom: 16px;
@@ -653,9 +654,9 @@ img {
     border-color: transparent;
     fill: #F4F4FD;
 }
-.checkbox-input:checked + .checkbox-label > .checbox-icon {
+/* .checkbox-input:checked + .checkbox-label > .checbox-icon {
     opacity: 0;
-}
+} */
 .checkbox-agreement {
     width: 16px;
     height: 16px;
@@ -663,6 +664,7 @@ img {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
     margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
