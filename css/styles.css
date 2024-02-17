@@ -77,7 +77,7 @@ img {
 .logo,
 .form-label,
 .form-textarea,
-.form-checkbox {
+.checkbox-label {
     line-height: 1.17;
 }
 .logo-dark,
@@ -170,7 +170,7 @@ img {
 .form-label,
 .form-btn,
 .form-textarea,
-.form-checkbox {
+.checkbox-label {
     letter-spacing: 0.04em;
 }
 .hero-btn,
@@ -186,7 +186,7 @@ img {
 .subscribe-input,
 .form-label,
 .form-textarea,
-.form-checkbox {
+.checkbox-label {
     font-size: 12px;
     font-weight: 400;
 }
@@ -564,8 +564,8 @@ img {
     top: 24px;
     right: 24px;
     color: #2E2F42;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -578,7 +578,7 @@ img {
 }
 .modal-btn-icon:hover,
 .modal-btn-icon:focus {
-    fill: #FFF
+    fill: #ffffff;
 }
 .modal-desc {
     margin-bottom: 16px;
@@ -591,7 +591,7 @@ img {
     margin-bottom: 4px;
 }
 .form-label,
-.form-checkbox {
+.checkbox-label {
     color: #8E8F99;
 }
 .form-field {
@@ -640,13 +640,12 @@ img {
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
 }
-.form-btn {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-top: 24px;
-}
 .form-checkbox {
-    display: flex;
     margin-bottom: 24px;
+
+}
+.checkbox-label {
+    display: block;
     user-select: none;
 }
 .checkbox-input:checked + .checkbox-agreement {
@@ -654,20 +653,19 @@ img {
     border-color: transparent;
 }
 .checkbox-input:checked + .checkbox-agreement > .checbox-icon {
-   opacity: 1;
+    opacity: 1;
 }
-
 .checkbox-agreement {
     width: 16px;
     height: 16px;
-
-    display: flex;
+    
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 2px;
-
+    
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -679,4 +677,7 @@ img {
 .checkbox-link {
     color: #4D5AE5;
     text-decoration-line: underline;
+}
+.form-btn {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }

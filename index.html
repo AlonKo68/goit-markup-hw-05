@@ -486,18 +486,20 @@
             name="user-comment" rows="8"
             id="user-comment" placeholder="Text input"></textarea>
         </div>
-        <label class="form-checkbox">
-          <input class="checkbox-input visually-hidden" type="checkbox" name="user-agreement" value="false" checked>
-          <span class="checkbox-agreement">
-            <svg class="checbox-icon" width="10" height="8">
-              <use href="./images/icons.svg#icon-checkbox"></use>
-            </svg>
-          </span>
-           I accept the terms and conditions of the 
-            <a class="checkbox-link" href="">
-              Privacy Policy
-            </a>
-        </label>
+        <div class="form-checkbox">
+          <label class="checkbox-label">
+            <input class="checkbox-input visually-hidden" type="checkbox" name="user-privacy" value="true" checked>
+            <span class="checkbox-agreement">
+              <svg class="checbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+             I accept the terms and conditions of the
+              <a class="checkbox-link" href="">
+                Privacy Policy
+              </a>
+          </label>
+        </div>
         <button class="form-btn" type="submit">
           Send
         </button>
