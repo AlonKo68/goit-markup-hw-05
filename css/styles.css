@@ -665,9 +665,9 @@ img {
     border-color: transparent;
     fill: #F4F4FD;
 } */
-/* .checkbox-input:checked + .checkbox-label > .checkbox-icon {
+.checkbox-input:checked + .checkbox-label > .checkbox-icon {
     opacity: 0;
-} */
+}
 .checkbox-agreement {
     width: 16px;
     height: 16px;
