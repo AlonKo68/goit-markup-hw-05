@@ -74,11 +74,13 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.logo,
+.logo {
+    line-height: 1.17; 
+}
 .form-label,
 .form-textarea,
 .checkbox-label {
-    line-height: 1.17;
+    line-height: 1.17; 
 }
 .logo-dark,
 .nav-link,
@@ -520,11 +522,9 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-
     /* display: flex;
     align-items: center;
     justify-content: center; */
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
