@@ -660,15 +660,21 @@ img {
     border-color: transparent;
     fill: #F4F4FD;
 } */
+.checkbox-input:focus + .checkbox-label .checkbox-agreement {
+    background-color: #404bbf;
+    border: none;
+    border-color: transparent;
+    fill: #F4F4FD;
+}
 .checkbox-input:checked + .checkbox-label .checkbox-agreement {
     background-color: #404bbf;
     border: none;
     border-color: transparent;
     fill: #F4F4FD;
 }
-/* .checkbox-input:checked + .checkbox-label .checkbox-agreement > .checkbox-icon {
+.checkbox-input:checked + .checkbox-label .checkbox-agreement > .checkbox-icon {
     opacity: 1;
-} */
+}
 .checkbox-agreement {
     width: 16px;
     height: 16px;
